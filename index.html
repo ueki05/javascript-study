@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8" />
     <title>サンプル</title>
   </head>
   <body>
+    <div>
+      <p>HTML要素の属性に指定する</p>
+      <input id="foo" type="button" value="foo" onclick="alert('bar'); alert('baz')">
+      <p>イベントハンドラでfalseを返す</p>
+      <a id="foo2" href="http://example.com" onclick="return stop();">example.com</a>
+    </div>
     <script type="text/javascript" src="test.js"></script>
   </body>
 </html>
