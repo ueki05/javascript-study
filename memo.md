@@ -31,10 +31,6 @@
 | DOMFocusin        | 要素がフォーカスを得た（非推奨。focusまたはfocusinイベントを使う）   |
 | DOMFocusOut       | 要素がフォーカスを失った（非推奨。blurまたはfocusoutイベントを使う） |
 
-|## Level 3 一覧
-| イベントタイプ    | 発火タイミング                                                       |
-|-------------------|----------------------------------------------------------------------|
-                   |                                                                      |
 ## Level 3 MouseEvent一覧
 | イベントタイプ    | 発火タイミング                                                       |
 |-------------------|----------------------------------------------------------------------|
@@ -71,4 +67,23 @@
 | compositionstart  | IMEで変換を開始した                                                  |
 | compositionupdate | IMEで変換候補を選択した                                              |
 | compositionend    | IMEで変換を確定した                                                  |
+
+## マウスポインタの移動中に発火するイベントの順序
+1. mouseover
+2. mouseenter
+3. mousemove
+4. mouseout
+5. mouseleave
+
+## ダブルクリック時に発火するイベントの順序
+1. mousedown
+2. mousemove (必要があれば)
+3. mouseup
+4. click
+5. mousemove (必要があれば)
+6. mousedown
+7. mousemove (必要があれば)
+8. mouseup
+9. click
+10. dblckick
 
