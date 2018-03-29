@@ -87,3 +87,7 @@
 9. click
 10. dblckick
 
+# Chrome Developer Toolsについて
+## 使えそうなサイト
+- https://www.buildinsider.net/web/chromedevtools/01
+- https://dotinstall.com/lessons/basic_chrome_dev_v2
